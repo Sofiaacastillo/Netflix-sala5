@@ -1,0 +1,68 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p>nav var</p>
+    </header>
+    <section>
+        <p> colocar el email</p>        
+    </section>
+        <section class= "container-fluid bg-black text-white py-4 px-5"> <!--*container-fluid 100% del ancho sin importar el tamaño de la pantalla, bg-black pinta de negro el fondo, text-whyte texto en sección de blanco, py y px padding -->
+            <!--*Título de la sección-->
+       <h2 class="fw-bold mb-4">Tendencias</h2>
+
+       <!--*Carrusel de Tendencias-->
+   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active"> <!--*Primera pantalla visible-->
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3"> <!--*Row activa las columnas tipo Flexbox, g-3 espacio o separación de cada tarjeta, row-cols depende en que pantalla estás visualizando el contenido desde la más chica a la más grande-->
+    <div class="col">
+        <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+            <!--*Para poner el número superpuesto-->
+            <span class="position-absolute fw-bold lh-1 text-black"
+                style="-webkit-text-stroke: 2px #fff; font-size: 5 rem; bottom: -15px; left: -20px; z-index: 2; user-select: none";>
+                1
+            </span>
+            <!--*Imagen de la primera película-->
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>      
+    </section>
+        <section>
+        <p>cards de motivos para unirse</p>        
+    </section>
+        <section>
+        <p>seccion de preguntas</p>        
+    </section>
+    <footer>
+        <p>pie</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
