@@ -1,3 +1,8 @@
+
+header{
+    margin-top: 0;
+    background: #995;
+
 #herosection{
     background-image: url(/assets/herosection1.jpeg); /**Para colocar de fondo una imagen guardada en una carpeta especifica*/
     background-size: cover; height: 600px; /**Modifica el tamaño del background "cover" es para que ocupe el tamaño completo y height para modificar lo alto del background*/
