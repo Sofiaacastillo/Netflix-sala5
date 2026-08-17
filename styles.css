@@ -1,22 +1,6 @@
-
-.card{
-    height: 335px !important;
+body{
+    background-color: black;
 }
-img{
-    width: 75px;
-    height: 50px;
-}
-.imagen{
-    position: absolute;
-  bottom: 1rem; /* Distancia desde la parte inferior */
-  right: 1rem;  /* Distancia desde la parte derecha */
-  width: 45px;  /* Ajusta el tamaño de los iconos a tu gusto */
-  height: auto;
-=======
-
-header{
-    margin-top: 0;
-    background: #995;
 
 #herosection{
     background-image: url(/assets/herosection1.jpeg); /**Para colocar de fondo una imagen guardada en una carpeta especifica*/
@@ -63,7 +47,28 @@ header{
     }
 
     .parrafohero2 {
-        font-size: 17px;
+        font-size: 12px;
         padding: 0 20px;
     }
+}
+
+/**SECCION DE MAS INFO**/
+/*Emoji de palomitas, al inicio, centrado y de tamaño grande */
+#palomitas{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Propiedades del boton "más info", centrado*/
+#boton-mas-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Se uso un card-group con cards individuales para esta seccion, para ir acorde al diseño de netflix se eliminaron los bordes*/
+.card-group .card{
+    border:none;
 }
