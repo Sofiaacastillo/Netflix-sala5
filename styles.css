@@ -1,0 +1,69 @@
+
+.card{
+    height: 335px !important;
+}
+img{
+    width: 75px;
+    height: 50px;
+}
+.imagen{
+    position: absolute;
+  bottom: 1rem; /* Distancia desde la parte inferior */
+  right: 1rem;  /* Distancia desde la parte derecha */
+  width: 45px;  /* Ajusta el tamaño de los iconos a tu gusto */
+  height: auto;
+=======
+
+header{
+    margin-top: 0;
+    background: #995;
+
+#herosection{
+    background-image: url(/assets/herosection1.jpeg); /**Para colocar de fondo una imagen guardada en una carpeta especifica*/
+    background-size: cover; height: 600px; /**Modifica el tamaño del background "cover" es para que ocupe el tamaño completo y height para modificar lo alto del background*/
+    color:aliceblue
+
+}
+.titlehero{
+  font-size: 70px; /**Modifica el tamaño de la letra*/
+  font-weight: bold; /**Modifica el grosor de la letra*/
+  text-align: center;  /**Centra el texto*/
+  max-width: 750px; /**Define y modifica la posición sobre su espacio*/
+  margin: auto;
+}
+.parrafohero{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    max-width: 850px;
+}
+.parrafohero2{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 750px;
+}
+
+@media (max-width: 768px) {
+
+    #herosection {
+        height: 500px;
+        background-position: center;
+    }
+
+    .titlehero {
+        font-size: 45px;
+        padding: 0 20px;
+    }
+
+    .parrafohero {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .parrafohero2 {
+        font-size: 17px;
+        padding: 0 20px;
+    }
+}

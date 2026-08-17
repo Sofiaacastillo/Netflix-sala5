@@ -1,55 +1,477 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
-</body>
-<!--*Footer-->
-    <footer class="bg-dark text-white mt-5 py-4">
-    <div class="container">
-        <div class="row">
-            
-            <!-- Nombre -->
-            <div class="col-md-4 mb-3">
-                <h5>¿Preguntas? Llama al 800 953 9947</h5>
-                <p><a href="#" class="https://www.netflix.com/mx/">Preguntas frecuentes</p></a>
-                <p><a href="#" class="https://www.netflix.com/mx/">Relaciones con inversionistas</p></a>
-                <p><a href="#" class="https://www.netflix.com/mx/">Comprar tarjetas de regalo</p></a>
-                <p><a href="#" class="https://www.netflix.com/mx/">Preferencias de Cookies</p></a>
-                <p><a href="#" class="https://www.netflix.com/mx/">Avisos legales</p></a>
+    <header>
+        <!-- Inicio navbar Salvador -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid bg-dark bg-opacity-50 text-white p-4">
+                <img class="img-fluid" id="logo_netflix" width="150" src="assets/logo.svg" alt="Logo netflix" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+                    <form class="d-flex" role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/traducir.png" alt="traducir" width="20" height="20" />Español
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Español</a></li>
+                                    <li><a class="dropdown-item" href="#">Ingles</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="btn btn-danger" type="submit">
+                            Iniciar sesión
+                        </button>
+                    </form>
+                </div>
             </div>
-            
-            <!-- Enlaces -->
-            <div class="col-md-4 mb-3">
-                <h5>Explora</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="https://www.netflix.com/mx/">Inicio</a></li>
-                    <li><a href="#" class="https://www.netflix.com/mx/">Menú</a></li>
-                    <li><a href="#" class="https://www.netflix.com/mx/">Tendencias</a></li>
-                </ul>
+        </nav>
+        <!-- fin navbar salvador  -->
+    </header>
+    <!--*Seccion principal despues del nav var-->
+    <section id="herosection">
+        <!--*Se asigno id a la seccion principal con nombre herosection para la modificacion del backgroung en css-->
+        <br>
+        <br>
+        <h1 class="titlehero">Películas y series ilimitadas y mucho más</h1>
+        <!--*Se asigno clase al titulo principal para su personalizacion-->
+        <br>
+        <p class="parrafohero">A partir de $139. Cancela cuando quieras.</p>
+        <p class="parrafohero2">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía
+            de Netflix.</p>
+        <br>
+        <!--*seccion para suscripcion email-->
+        <div class="container text-center">
+            <!-- Formulario -->
+            <form class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+
+                <!-- Campo de texto para el Email -->
+                <input type="email" class="form-control caja-email" placeholder="Email" required>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="btn boton-comenzar">
+                    Comenzar &gt;
+                </button>
+
+            </form>
+        </div>
+        <!-- Bootstrap Icons (para la flecha del botón) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    </section>
+    <section>
+        <!--***Seccion de más información, donde están las palomitas***-->
+        <!--Estructura card-group tomada de la documentación oficial de bootstrap-->
+        <div class="card-group" data-bs-theme="dark">
+            <!--Card dedicada a las palomitas-->
+            <div id="palomitas" class="card">
+                <p>🍿</p>
+                <!--<img id="palomitas2" src="https://www.clipartmax.com/png/middle/4-47733_popcorn-clip-art-popcorn-clipart-transparent-background.png" class="card-img-top" alt="Palomitas de maiz"> -->
             </div>
-            
-            <!-- Redes sociales -->
-            <div class="col-md-4 mb-3">
-                <h5>Síguenos</h5>
-                <p><a href="#" class="https://www.instagram.com/"></a>📷 Instagram</p>
-                <p><a href="#" class="https://www.facebook.com/"></a>📘 Facebook</p>
-                <p><a href="#" class="https://www.tiktok.com/"></a>🎵 TikTok</p>
+            <!--Card dedicada al precio del servicio-->
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">Todo lo que te encanta de Netflix por tan solo $100.
+                        <br>
+                        Aprovecha nuestra opción más accesible, SIN anuncios.
+                    </p>
+                </div>
+            </div>
+            <!--Card dedicada al botón de "más info"-->
+            <div class="card">
+
+                <div id="boton-mas-info" class="card-body d-flex flex-column align-items-center">
+
+                    <button type="button" class="btn btn-secondary">Más info</button>
+
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="text-center">
-            <p class="mb-0">
-                © 2026 Genflix | Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.
-            </p>
+    </section>
+    <section class="container-fluid bg-black text-white py-4 px-5">
+        <!--*container-fluid 100% del ancho sin importar el tamaño de la pantalla, bg-black pinta de negro el fondo, text-whyte texto en sección de blanco, py y px padding -->
+        <!--*Título de la sección-->
+        <h2 class="fw-bold mb-4">Tendencias</h2>
+
+        <!--*Carrusel de Tendencias-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active"> <!--*Primera pantalla visible-->
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+                        <!--*Row activa las columnas tipo Flexbox, g-3 espacio o separación de cada tarjeta, row-cols depende en que pantalla estás visualizando el contenido desde la más chica a la más grande-->
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    1
+                                </span>
+                                <!--*Imagen de la primera película-->
+                                <img src="assets/la ultima casa.jpg" class="img-fluid rounded-3 w-100" alt="Película 1"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    2
+                                </span>
+                                <!--*Imagen de la segunda película-->
+                                <img src="/assets/criaturas luminosas.jpg" class="img-fluid rounded-3 w-100"
+                                    alt="Película 2" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    3
+                                </span>
+                                <!--*Imagen de la tercera pelicula-->
+                                <img src="/assets/maquina de guerra.webp" class="img-fluid rounded-3 w-100"
+                                    alt="Película 3" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    4
+                                </span>
+                                <!--*Imagen de la cuarta pelicula-->
+                                <img src="/assets/frankestein.jpg" class="img-fluid rounded-3 w-100" alt="Película 4"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    5
+                                </span>
+                                <!--*Imagen de la quinta pelicula-->
+                                <img src="/assets/happy gilmore 2.jpg" class="img-fluid rounded-3 w-100"
+                                    alt="Película 5" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    6
+                                </span>
+                                <!--*Imagen de la sexta pelicula-->
+                                <img src="/assets/jay kelly.jpg" class="img-fluid rounded-3 w-100" alt="Película 6"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"> <!--*Segunda pantalla del 7 al 10-->
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    7
+                                </span>
+                                <!--*Imagen de la septima pelicula-->
+                                <img src="/assets/back in action.jpg" class="img-fluid rounded-3 w-100" alt="Película 7"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    8
+                                </span>
+                                <!--*Imagen de la octava pelicula-->
+                                <img src="/assets/maldita suerte.jpg" class="img-fluid rounded-3 w-100" alt="Película 8"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    9
+                                </span>
+                                <!--*Imagen de la novena pelicula-->
+                                <img src="/assets/trol 2.jpg" class="img-fluid rounded-3 w-100" alt="Película 9"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative" style="min-width: 150px; cursor: pointer;">
+                                <!--*Para poner el número superpuesto-->
+                                <span class="position-absolute fw-bold lh-1 text-black"
+                                    style="-webkit-text-stroke: 2px #fff; font-size: 5rem; bottom: -15px; left: -20px; z-index: 2; user-select: none;">
+                                    10
+                                </span>
+                                <!--*Imagen de la decima pelicula-->
+                                <img src="/assets/extraterritorial.jpg" class="img-fluid rounded-3 w-100"
+                                    alt="Película 10" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--*botones de navegación-->
+                <!--*Botón anterior-->
+                <button class="carousel-control-prev w-auto" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev" style="z-index: 3;">
+                    <span class="carousel-control-prev-icon bg-dark bg-opacity-75 p-3 rounded-end"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    <!--*se le coloca opacidad, color negro a la flecha, redondeo a las esquinas-->
+                </button>
+
+                <!--*Botón siguiente-->
+                <button class="carousel-control-next w-auto" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next" style="z-index: 3;">
+                    <span class="carousel-control-next-icon bg-dark bg-opacity-75 p-3 rounded-start"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+    <section>
+        <!--cards-->
+        <p>cards de motivos para unirse</p>
+        <h2>Más motivos para unirte</h2>
+        <br>
+        <div class="row cards">
+            <div class="col-md-3 h-100 mb-3 mb-md-0">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Disfruta en tu TV</h5>
+                        <p class="card-text">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de
+                            Blu-ray y más.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 h-100">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Descarga tus series para verlas offline</h5>
+                        <p class="card-text">Guarda tu contenido favorito y siempre tendrás algo para ver..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 h-100">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Disfruta donde quieras</h5>
+                        <p class="card-text">Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 h-100">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Crea perfiles para niños</h5>
+                        <p class="card-text">Los niños vivirán aventuras con sus personajes favoritos en un espacio
+                            diseñado exclusivamente para ellos, gratis con tu membresía.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!--! Sección de Preguntas frecuentes -->
+    <section class="bg-black text-white py-10">
+        <div class="container col-lg-8 mx-auto">
+            <!-- !Título de la sección -->
+            <h2 class="fw-bold mb-4 fs-1">Preguntas frecuentes del Nefli-clon</h2>
+            <!-- !Contenedor del Acordeón -->
+            <div class="accordion accordion-flush d-flex flex-column gap-2" id="AcordeonPreguntas">
+                <!-- !Pregunta 1 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h3 class="accordion-header"><button
+                            class="accordion-button collapsed bg-dark text-white fs-4 border-0 shadow-none"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#pregunta1" aria-expanded="false"
+                            aria-controls="pregunta1">
+                            ¿Cuánto cuesta Netflix?</button></h3>
+                    <div id="pregunta1" class="accordion-collapse collapse" data-bs-parent="#AcordeonPreguntas">
+                        <div class="accordion-body fs-5 border-top border-secondary">
+                            <p>Los nuevos miembros pueden probar Netflix 30 días por $0. Una vez que termine el periodo
+                                de prueba gratis, tu plan se renovará automáticamente al precio habitual según el plan
+                                que elijas. Hay planes desde $139 hasta $369.</p>
+                            <p>Disfruta de Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de
+                                streaming. Sin costo adicional; cancela cuando quieras.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Pregunta 2 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h3 class="accordion-header"><button
+                            class="accordion-button collapsed bg-dark text-white fs-4 border-0 shadow-none"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#pregunta2" aria-expanded="false"
+                            aria-controls="pregunta2">
+                            ¿Qué es Netflix?</button></h3>
+                    <div id="pregunta2" class="accordion-collapse collapse" data-bs-parent="#AcordeonPreguntas">
+                        <div class="accordion-body fs-5 border-top border-secondary">
+                            <p>Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y
+                                documentales premiados en casi cualquier pantalla conectada a internet.</p>
+                            <p>Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre
+                                hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Pregunta 3 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h3 class="accordion-header"><button
+                            class="accordion-button collapsed bg-dark text-white fs-4 border-0 shadow-none"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#pregunta3" aria-expanded="false"
+                            aria-controls="pregunta3">
+                            ¿Dónde puedo Netflix?</button></h3>
+                    <div id="pregunta3" class="accordion-collapse collapse" data-bs-parent="#AcordeonPreguntas">
+                        <div class="accordion-body fs-5 border-top border-secondary">
+                            <p>Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver
+                                contenido al instante a través de netflix.com desde tu computadora personal o en
+                                cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como
+                                smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.</p>
+                            <p>Además, puedes descargar tus series favoritas con la app para iOS o Android. Con la
+                                función de descarga, puedes ver contenido donde vayas y sin conexión a internet. Lleva
+                                Netflix contigo adonde sea.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Pregunta 4 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h3 class="accordion-header"><button
+                            class="accordion-button collapsed bg-dark text-white fs-4 border-0 shadow-none"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#pregunta4" aria-expanded="false"
+                            aria-controls="pregunta4">
+                            ¿Cómo cancelo mi suscripción?</button></h3>
+                    <div id="pregunta4" class="accordion-collapse collapse" data-bs-parent="#AcordeonPreguntas">
+                        <div class="accordion-body fs-5 border-top border-secondary">
+                            <p>Netflix es flexible. Cancela la membresía online con solo dos clics. No hay cargos por
+                                cancelación. Inicia o cancela tu cuenta cuando quieras.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Pregunta 5 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h3 class="accordion-header"><button
+                            class="accordion-button collapsed bg-dark text-white fs-4 border-0 shadow-none"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#pregunta5" aria-expanded="false"
+                            aria-controls="pregunta5">
+                            ¿Qué puedo ver en Netflix?</button></h3>
+                    <div id="pregunta5" class="accordion-collapse collapse" data-bs-parent="#AcordeonPreguntas">
+                        <div class="accordion-body fs-5 border-top border-secondary">
+                            <p>Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales
+                                premiados y más. Todo lo que quieras ver, cuando quieras.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Pregunta 6 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h3 class="accordion-header"><button
+                            class="accordion-button collapsed bg-dark text-white fs-4 border-0 shadow-none"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#pregunta6" aria-expanded="false"
+                            aria-controls="pregunta6">
+                            ¿Es bueno Netflix para niños?</button></h3>
+                    <div id="pregunta6" class="accordion-collapse collapse" data-bs-parent="#AcordeonPreguntas">
+                        <div class="accordion-body fs-5 border-top border-secondary">
+                            <p>La experiencia de Netflix para niños está incluida en la membresía para que los padres
+                                tengan el control mientras los peques disfrutan series y películas familiares en su
+                                propio espacio.</p>
+                            <p>Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten
+                                restringir el contenido que pueden ver los niños en función de la clasificación por edad
+                                y bloquear determinados títulos que no quieras que los niños vean.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Fin de sección de Preguntas frecuentes -->
+    <section>
+        <input type="email" class="form-control caja-email" placeholder="Email" required>
+
+        <!-- Botón de envío -->
+        <button type="submit" class="btn boton-comenzar">
+            Comenzar &gt;
+        </button>
+
+        </form>
+    </section>
     </div>
-</footer>
+    <!-- Bootstrap Icons (para la flecha del botón) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Nombre -->
+                <div class="col-md-4 mb-3">
+                    <h5>¿Preguntas? Llama al 800 953 9947</h5>
+                    <p><a href="#" class="https://www.netflix.com/mx/">Preguntas frecuentes</p></a>
+                    <p><a href="#" class="https://www.netflix.com/mx/">Relaciones con inversionistas</p></a>
+                    <p><a href="#" class="https://www.netflix.com/mx/">Comprar tarjetas de regalo</p></a>
+                    <p><a href="#" class="https://www.netflix.com/mx/">Preferencias de Cookies</p></a>
+                    <p><a href="#" class="https://www.netflix.com/mx/">Avisos legales</p></a>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="col-md-4 mb-3">
+                    <h5>Explora</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="https://www.netflix.com/mx/">Inicio</a></li>
+                        <li><a href="#" class="https://www.netflix.com/mx/">Menú</a></li>
+                        <li><a href="#" class="https://www.netflix.com/mx/">Tendencias</a></li>
+                        <li><a href="#" class="https://generation.instructure.com/courses/4715">Conoce Gen</a></li>
+                        <li><a href="#" class="https://generation.instructure.com/courses/4715">Unete a Gen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <p><a href="#" class="https://www.instagram.com/">📷 Instagram</p></a>
+                    <p><a href="#" class="https://www.facebook.com/">📘 Facebook</p></a>
+                    <p><a href="#" class="https://www.tiktok.com/">🎵 TikTok</p></a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 Genflix | Esta página está protegida por Google reCAPTCHA para comprobar que no eres un
+                    robot.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
 </html>
