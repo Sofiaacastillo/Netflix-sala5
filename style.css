@@ -1,10 +1,9 @@
 /* Estilo para la caja donde se escribe el email */
 .caja-email {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro transparente */
-  border: 1px solid #777;                /* Borde gris fino */
-  color: white;                         /* Texto en color blanco */
-  max-width: 400px;                     /* Ancho máximo para que no crezca demasiado */
-  height: 50px;                         /* Altura de la caja */
+  border: 1px solid #777;               
+  color: white;                         
+  max-width: 400px;                     
 }
 
 /* Cambia el color del texto de sugerencia ("Email") */
@@ -14,12 +13,12 @@
 
 /* Estilo para el botón rojo */
 .boton-comenzar {
-  background-color: #e50914; /* Rojo característico de Netflix */
-  color: white;               /* Texto blanco */
-  font-weight: bold;          /* Texto en negrita */
-  font-size: 1.2rem;          /* Tamaño de letra un poco más grande */
-  height: 50px;               /* Misma altura que el input para que queden parejos */
-  padding: 0 20px;            /* Espacio interno a los lados */
+  background-color: #e50914; 
+  color: white;               
+  font-weight: bold;          
+  font-size: 1.2rem;          
+  height: 50px;               
+  padding: 0 20px;            
 }
 
 /* Cambio de color cuando pasas el ratón por encima del botón */
