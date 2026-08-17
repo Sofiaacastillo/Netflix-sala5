@@ -1,4 +1,4 @@
-# Netflix-sala5
+# Netflix Sala 5
 
 ## Descripción del Proyecto
 
