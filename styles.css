@@ -1,4 +1,19 @@
 
+.card{
+    height: 335px !important;
+}
+img{
+    width: 75px;
+    height: 50px;
+}
+.imagen{
+    position: absolute;
+  bottom: 1rem; /* Distancia desde la parte inferior */
+  right: 1rem;  /* Distancia desde la parte derecha */
+  width: 45px;  /* Ajusta el tamaño de los iconos a tu gusto */
+  height: auto;
+=======
+
 header{
     margin-top: 0;
     background: #995;
