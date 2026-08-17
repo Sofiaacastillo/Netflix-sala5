@@ -1,3 +1,5 @@
+/*******SECCION DE MAS INFO*******/
+/*Emoji de palomitas, al inicio, centrado y de tamaño grande */
 #palomitas{
     font-size: 50px;
     display: flex;
@@ -5,12 +7,14 @@
     align-items: center;
 }
 
+/*Propiedades del boton "más info", centrado*/
 #boton-mas-info{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*Se uso un card-group con cards individuales para esta seccion, para ir acorde al diseño de netflix se eliminaron los bordes*/
 .card-group .card{
     border:none;
 }
